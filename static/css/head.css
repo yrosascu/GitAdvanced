@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+@media screen and (min-width: 601px){
+    .logo-medik-helper {
+        font-size: 2rem;
+    }
+}
+html,
+body{
+    background-image: radial-gradient(circle,  white, #f4f6f6 50%);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.login-medik{
+    margin: 30px auto;
+}
+.login-medik h1{
+    margin: 10px auto 30px;
+}
+.card{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.logo-medik-helper{
+    font-size: 6vw;
+    font-family: 'Limelight', cursive;
+    color: #124944;
+}
+.card-header{
+    text-align: center;
+}
+.form-medik input{
+    font-size: 12px;
+    background-color: #f2f2f2;
+    border: none;
+    margin-bottom: 20px !important;
+}
+.text-form{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.forgot-pass{
+    font-size: 12px;
+}
+.form-medik button{
+    padding:10px;
+    background-color: #35B729;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+.recovery-medik{
+    margin: 100px auto 0px;
+}
+.recovery-medik button{
+    padding: 10px 20px;
+}

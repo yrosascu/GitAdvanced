@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+html,
+body {
+    /*background-image: radial-gradient(circle,  white, #c6e6f7 50%);*/
+    background-image: radial-gradient(circle,  white, #f4f6f6 50%);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 25px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-weight: 400;
+    color: #3d5170;
+}
+.navbar-medik{
+    justify-content: space-between;
+    background-color: #124944;
+    height: 4rem;
+    color: white;
+}
+.navbar-medik a{
+    font-size: 14px;
+}
+.dropdown-text{
+    display: inline-block;
+    margin-left: 1em;
+}
+a{
+    background-color:transparent;
+    text-decoration:none;
+}
+
+.navbar-user-img{
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    box-shadow:0 0 5px 2px rgba(0,0,0,.1);
+    display:inline-block;
+    vertical-align:middle
+}
+.img-circle{
+    border-radius: 50%;
+}
+
+.fixed-top-2 {
+    margin-top: 0px;
+}
+
+.sticky-top {
+    padding-top: 14px;
+}
+.sticky-top span{
+    font-size: 14px;
+}
+.navbar-patient{
+    background-color: white;
+    height: 3rem;
+}
+.box {
+    display: flex;
+    margin-bottom: 30px;
+}
+.box-footer{
+    display: flex;
+    margin: 10px auto;
+}
+.gretting h3{
+    text-align: center;
+}
+
+.forgot-pass{
+    padding: 5px 0;
+    font-size: small;
+}
+.form-container{
+    position: absolute;
+    top: 15vh;
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #000;
+}
+.container-medik{
+    background-color: white;
+    top:15vh;
+    padding: 5em;
+}
+.box-title{
+    display: flex;
+    margin-top: 3.5rem;
+}
+.box-title .container .title-form{
+    height: 8rem;
+    align-items: center;
+}
+.medik-item {
+    border-radius: 10px;
+    border: 1px solid grey;
+    background: white;
+    padding: 50px 0;
+}
+.text-title-form{
+    padding: 100px auto;
+    font-size: cal(2em + 1vw);
+    font-family: 'Volkhov', serif;
+    color: #112e1e;
+}
+
+.btn-1 {
+    font-family: Hack, monospace;
+    background: #9dd162;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 0.5rem;
+    border: 0;
+    transition: all 0.5s;
+    border-radius: 10px;
+    width: auto;
+    position: relative;
+}
+.btn-1::hover {
+    background: #2b2bff;
+    transition: all 0.5s;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px #0000ff61;
+    padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+
+}
+
+.content-patient{
+    position: absolute;
+    z-index: 999;
+    margin: 40pz auto;
+    right: 15%;
+    top: calc(15ex + 3vh);
+    font-size: 12px;
+}
+.card-body input{
+    font-size: 12px;
+    background-color: #f2f2f2;
+    border: none;
+    margin-bottom: 20px !important;
+}
+.card-body label{
+    font-size: 13px;
+    font-weight: 600;
+}
+.content-patient button{
+    font-size: 12px;
+    border: none;
+    padding: 10px 20px;
+    background-color: #35B729;
+}
+
+.form-group select{
+    appearance: none;
+    -webkit-appearance: none;
+	-moz-appearance: none;
+    background-color: #f2f2f2;
+    font-size: 12px;
+    border: none;
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+}
+
+.principal-title-form{
+    margin: 50px auto 20px;
+    padding: 10 auto;
+}
+
+.toggle-container {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    pointer-events: none;
+}
+  
+.toggle-container input {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: all;
+}
+  
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: #2196f3;
+    transition: 0.4s;
+    pointer-events: none;
+}
+  
+.slider::before {
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    left: 8px;
+    bottom: 8px;
+    background-color: #fff;
+    transition: 0.2s;
+    pointer-events: none;
+}
+  
+  .slider::after {
+    position: absolute;
+    content: "Micrófono";
+    height: 24px;
+    width: 24px;
+    right: 58px;
+    bottom: 8px;
+    transition: 0.2s;
+    pointer-events: none;
+    color: #fff;
+  }
+  
+  input:checked + .slider {
+    background-color: #808080;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(80px);
+  }
+  
+input:checked + .slider:after {
+    content: "Teclado";
+    left: 8px;
+}
+  
+  
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#demo {
+    background-color: white;
+    max-width: 1200px;
+    margin: 10px auto;
+}
+
+.carousel-caption {
+    position: initial;
+    z-index: 10;
+    padding: 8rem 6rem;
+    color: rgba(78, 77, 77, 0.856);
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    font-size: 2rem;
+    font-weight: 550;
+    line-height: 5rem
+}
+
+@media(max-width:767px) {
+    .carousel-caption {
+        position: initial;
+        z-index: 10;
+        padding: 2rem auto;
+        color: rgba(78, 77, 77, 0.856);
+        text-align: center;
+        font-family: 'Crimson Text', serif;
+        font-style: light;
+        font-size: 0.6rem;
+        font-style: italic;
+        font-weight: 550;
+        line-height: 1.5rem
+    }
+}
+
+.carousel-caption img {
+    width: 6rem;
+    border-radius: 5rem;
+    margin-top: 2rem
+}
+
+@media(max-width:767px) {
+    .carousel-caption img {
+        width: 4rem;
+        border-radius: 4rem;
+        margin-top: 1rem
+    }
+}
+
+#image-caption {
+    font-style: normal;
+    font-size: 1rem;
+    margin-top: 0.5rem
+}
+
+@media(max-width:767px) {
+    #image-caption {
+        font-style: normal;
+        font-size: 0.6rem;
+        margin-top: 0.5rem
+    }
+}
+
+#demo i{
+        background-color: rgb(207, 197, 199);
+        padding: 1.4rem
+}
+@media(max-width:767px) {
+    #demo i {
+        padding: 0.8rem
+    }
+}
+.carousel-item p{
+    /*font-size: 3vw;*/
+	text-align: center;
+	width: 50vw;
+	margin: 4vw 2vw;
+}
+.carousel-control-prev {
+    justify-content: flex-start
+}
+
+.carousel-control-next {
+    justify-content: flex-end
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    transition: none;
+    opacity: unset
+}
+
+.form-group input{
+    font-size: 12px;
+    background-color: #f2f2f2;
+    border: none;
+    margin-bottom: 20px !important;   
+}
+.form-group label{
+    font-size: 13px;
+    font-weight: 600;
+}
+.subsection-form{
+    display: block;
+    margin-top: 50px;
+    padding: 10px auto 20px;
+}
+.footer{
+    margin: 10px auto;
+    height: 20px;
+}
+
+.clearfix button{
+    font-size: 12px;
+}
+.form-check label{
+    font-weight: 300;
+}
+
+#diagnosis .diagnosis{
+    margin: 20px auto 50px;
+}
+
+.text-center {
+    text-align: center;
+  }
